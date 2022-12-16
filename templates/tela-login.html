@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/tela-login.css' %}">
+    <title>Seja bem vindo!</title>
+</head>
+<body>
+    <h1>opaaaa</h1>
+    <div class="container">
+        <div class="card">
+            <form action="{% url 'login' %}" method="POST">{% csrf_token %}
+                <input type="email" name="email" placeholder="Ex. user@gmail.com">
+                <input type="password" name="password" placeholder="Ex. 12345678">
+                <button type="submit">Logar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
