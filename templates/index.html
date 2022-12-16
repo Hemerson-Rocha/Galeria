@@ -1,0 +1,52 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">   
+    <title>Index</title>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="/">Logo</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="/">Perfil</a></li>
+                <li><a href="/">Publicar</a></li>
+                <li><a href="/">login/logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="flex">
+        <div>
+            <img src="{% static 'img/img1.jpg' %}">
+            <p>paisagem</p>
+        </div>
+        <div>
+            <img src="{% static 'img/img2.jpg' %}">
+            <p>paisagem</p>
+        </div>
+        <div>
+            <img src="{% static 'img/img3.jpg' %}">
+            <p>paisagem</p>
+        </div>
+        <div>
+            <img src="{% static 'img/img1.jpg' %}">
+            <p>paisagem</p>
+        </div>
+        <div>
+            <img src="{% static 'img/img2.jpg' %}">
+            <p>paisagem</p>
+        </div>
+        <div>
+            <img src="{% static 'img/img3.jpg' %}">
+            <p>paisagem</p>
+        </div>
+    </section>
+
+</body>
+</html>
