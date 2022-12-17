@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Sans+Pro&display=swap');
+
 body, ul, li, p {
     margin: 0px;
     padding: 0px;
     list-style: none;
     font-size: 1.2rem;
-    font-family: Arial;    
+    font-family: 'Fira Sans', sans-serif;   
 }
 
 a {

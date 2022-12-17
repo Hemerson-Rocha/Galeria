@@ -9,15 +9,17 @@
     <title>Seja bem vindo!</title>
 </head>
 <body>
-    <h1>opaaaa</h1>
     <div class="container">
-        <div class="card">
-            <form action="{% url 'login' %}" method="POST">{% csrf_token %}
-                <input type="email" name="email" placeholder="Ex. user@gmail.com">
-                <input type="password" name="password" placeholder="Ex. 12345678">
-                <button type="submit">Logar</button>
-            </form>
-        </div>
+        <form action="{% url 'login' %}" method="POST">{% csrf_token %}
+            <h1>Login</h1>
+            <input type="email" name="email" placeholder="Ex. user@gmail.com">
+            <br>
+            <br>
+            <input type="password" name="password" placeholder="Ex. 12345678">
+            <br>
+            <br>
+            <button type="submit">Logar</button>
+        </form>
     </div>
 </body>
 </html>
